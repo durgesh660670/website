@@ -7,6 +7,7 @@
 >git remote add origin https://github.com/durgesh660670/website.git
 >git push origin master
 >git checkout steps.txt
+>git diff
 
 ___________git command end
 
