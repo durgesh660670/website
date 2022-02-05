@@ -1,0 +1,88 @@
+A -------- Basic setup start---------------
+1. command to initilize the backend project
+>>>npm init
+         
+
+2. command to install express.
+>>>npm install express
+
+3.command to install mongoose to connect backend with mondodb database.
+>>>npm install mongoose
+
+4.command to extract and parse data from request - body parser.
+>>>npm install body-parser
+
+5.command to install templete engine.
+>>>npm install hbs
+
+6.to install nodemon (live watch, if any changes happens in the file it will restart the server)
+>>npm install nodemon --save-dev
+
+7.to run by default app.js file
+>>>package.json -> scripts->"start":"nodemon src/app.js"
+
+8. created new folder src and move to app.js into scr.
+
+9.create Views folder outside the src folder.
+
+10.created public folder outside src for static files.
+
+11.models and routes folder inside src folder.
+
+
+ A -------- Basic setup end---------------
+
+ B ---------hbs configuration start............
+
+
+app.js->const hbs=require('hbs');
+
+ B ----------hbs configuration end;
+
+
+c ---------- static file serve configutation start-------
+
+
+app.js->app.use('/static',express.static('public'))
+
+c ---------- static file serve configutation end-------
+
+
+D ----------- databse configuration start--------------
+
+app.js->
+
+const mongoose=require('mongoose')
+
+mongoose.connect('mongodb://localhost/website',()=>{
+
+console.log('datbase connected')
+})
+
+D ----------- databse configuration end--------------
+
+
+E ------------ partials configuration(make component resuable) start------------
+ 1. created partials folder inside views folder
+ 2. app.js-> hbs.registerPartials('views/partials')
+
+E ------------ partials configuration end------------
+
+F---------------------------
+svg background -> for beackground theme
+https://fontawesome.com/-> for online  font 
+
+font awesome cmd-> for font cdn
+
+G-------------------body parser start_------
+
+app.js->
+app.use('', routes) - below this <-
+
+app.use(bodyParser.urlencoded({
+    extended:true
+}))
+
+G-------------------body parser end_------
+
+H------------------
