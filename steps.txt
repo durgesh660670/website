@@ -1,3 +1,15 @@
+-----------git command start---------------
+>touch .gitignore
+>git init
+>git add .
+>git commit -m "comment"
+>git status
+>git remote add origin https://github.com/durgesh660670/website.git
+>git push origin master
+
+___________git command end
+
+
 A -------- Basic setup start---------------
 1. command to initilize the backend project
 >>>npm init
