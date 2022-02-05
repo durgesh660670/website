@@ -8,6 +8,23 @@
 >git push origin master
 >git checkout steps.txt
 >git diff
+>git diff --staged  #track before commit
+>git diff head #track after commit
+>git show
+>git log
+>git log -p 2
+>git log --stat
+>git rm -f steps.txt
+>git rm --cached steps.txt
+>git clone https://github.com/durgesh660670/website.git
+
+######### Branch #######
+>git branch --list
+>git branch developer1 #add new branch
+>git checkout developer1 #switch from master to developer1
+>git branch -D list  #to delete branch
+>git merge login1 #to merge data from develoepr1 to master
+
 
 ___________git command end
 
