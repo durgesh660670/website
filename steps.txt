@@ -26,7 +26,14 @@
 >git merge login1 #to merge data from develoepr1 to master
 
 
-___________git command end
+___________git command end-------------
+
+
+___________import site start_____________
+
+>flate icon #icon for the site
+___________import site end_____________
+
 
 
 A -------- Basic setup start---------------
@@ -116,4 +123,4 @@ app.use(bodyParser.urlencoded({
 
 G-------------------body parser end_------
 
-H------------------
+H--------
