@@ -23,7 +23,7 @@
 >git branch developer1 #add new branch
 >git checkout developer1 #switch from master to developer1
 >git branch -D list  #to delete branch
->git merge login1 #to merge data from develoepr1 to master
+>git merge developer1 #to merge data from develoepr1 to master
 
 
 ___________git command end-------------
