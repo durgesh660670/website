@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const routes1 = require('./routes/main')
 const routes2 = require('./routes/login')
+const routes3 = require('./routes/admin_user/detailsMaster')
 const hbs = require('hbs');
 const mongoose = require('mongoose')
 const Details = require('./models/Details')
@@ -21,6 +22,7 @@ app.use(bodyParser.urlencoded({
 
 app.use('', routes1)
 app.use('', routes2)
+app.use('/admin_user',routes3)
 
 
 // template engine start

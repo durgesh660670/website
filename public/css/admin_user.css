@@ -4,5 +4,9 @@ border: 1px solid #13b821;
 
 .admin .card:hover{
     background-color: #e2e2e2;
-    cursor:pointer;
+    cursor:pointerwer;
     }
+.admin a{
+    text-decoration: none;
+
+}    
