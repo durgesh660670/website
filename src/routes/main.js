@@ -8,7 +8,7 @@ const Contacts = require('../models/Contacts')
 
 
 routes.get('/', async (req, res) => {
-    const details = await Details.findOne({ _id: '61f4d023c4665a0c6915c00d' })
+    const details = await Details.findOne({ _id: '62034483b3b0e3488632e9c9' })
     const sliders=await Slider.find()
     const services=await Services.find()
 
@@ -16,7 +16,7 @@ routes.get('/', async (req, res) => {
     res.render("index",{details:details,sliders:sliders,services:services})
 })
 routes.get('/gallery', async (req, res) => {
-    const details = await Details.findOne({ _id: '61f4d023c4665a0c6915c00d' })
+    const details = await Details.findOne({ _id: '62034483b3b0e3488632e9c9' })
 
     console.log(details);
     res.render("gallery",{details:details})

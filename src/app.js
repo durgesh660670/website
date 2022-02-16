@@ -3,6 +3,8 @@ const app = express()
 const routes1 = require('./routes/main')
 const routes2 = require('./routes/login')
 const routes3 = require('./routes/admin_user/detailsMaster')
+const routes4 = require('./routes/admin_user/slidersMaster')
+const routes5 = require('./routes/admin_user/servicesMaster')
 const hbs = require('hbs');
 const mongoose = require('mongoose')
 const Details = require('./models/Details')
@@ -23,6 +25,8 @@ app.use(bodyParser.urlencoded({
 app.use('', routes1)
 app.use('', routes2)
 app.use('/admin_user',routes3)
+app.use('/admin_user',routes4)
+app.use('/admin_user',routes5)
 
 
 // template engine start

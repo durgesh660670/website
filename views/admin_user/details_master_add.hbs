@@ -11,31 +11,31 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-    <title>Details Master Page</title>
+    <title>Details Master Add Page</title>
 </head>
 
 <body>
 
     {{>admin_user/navbar details=details}}
-    {{!--
+    
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-3">
                 <div class="card my-5 p-4">
                     <div class="card-body">
-                        <form autocomplete="off" action="/admin_user/process_details_form" method="post">
+                        <form autocomplete="off" action="/admin_user/process_details_add_form" method="post">
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Brand Name</label>
+                                <label  class="form-label">Brand Name</label>
                                 <input type="text" class="form-control" name='brandName'>
 
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Label Name</label>
+                                <label  class="form-label">Label Name</label>
                                 <input type="text" class="form-control" name='labelName'>
 
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">URL</label>
+                                <label  class="form-label">URL</label>
                                 <input type="text" class="form-control" name='url'>
 
                             </div>
@@ -50,53 +50,9 @@
             </div>
         </div>
     </div>
-    --}}
+   
 
 
-
-    <div class="container mt-5 ">
-        <div class="card">
-            <div class="card-header text-center p-3">
-                <a class="btn btn-primary" href="/admin_user/details_master_add">Add</a>
-
-            </div>
-            <div class="card-body">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">SR. No.</th>
-                            <th scope="col">Label</th>
-                            <th scope="col">URL</th>
-                            <th scope="col">Modify</th>
-                            <th scope="col">Delete</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        {{#each details.links}}
-                        <tr>
-                            <td>{{@index}}</td>
-                            <td>{{this.label}}</td>
-                            <td>{{this.url}}</td>
-                            <td><a class="btn btn-secondary"
-                                    href="/admin_user/details_master_modify/{{this._id}}">Modify</a></td>
-            </div>
-
-
-            <td> <a class="btn btn-danger" href="/admin_user/details_master_delete/{{this._id}}">Delete</a></td>
-
-
-            </tr>
-            {{/each}}
-
-
-            </tbody>
-            </table>
-
-        </div>
-
-    </div>
 
 
 
